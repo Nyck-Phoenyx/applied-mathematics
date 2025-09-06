@@ -1,0 +1,37 @@
+# Resfriamento de Newton
+
+Este projeto implementa e explora a **Lei do Resfriamento de Newton**, permitindo simular e analisar como a temperatura de 
+um corpo varia ao longo do tempo quando imerso em um meio de temperatura constante.
+
+## ✨ Funcionalidades
+- **Simulação numérica** da temperatura de um corpo ao longo do tempo, resolvendo a equação diferencial com `odeint`.
+- **Predição do tempo necessário** para que o corpo atinja uma temperatura final desejada, dado o coeficiente de resfriamento.
+- **Cálculo do coeficiente de resfriamento (k)** a partir de dados experimentais: temperaturas inicial, final, ambiente e tempo decorrido.
+
+## 🔧 Tecnologias utilizadas
+- Python
+- NumPy
+- SciPy (`odeint`)
+- Matplotlib
+
+## 📊 Exemplos de uso
+1. **Simulação da curva de resfriamento**
+   - Entrada: \(T_0 = 80\) °C, \(T_{amb} = 20\) °C, \(k = 0.2027\), tempo = 10 min  
+   - Saída: gráfico mostrando a curva de resfriamento até se aproximar da temperatura ambiente.
+
+2. **Cálculo do tempo necessário**
+   - Entrada: \(T_0 = 80\) °C, \(T_{amb} = 20\) °C, \(k = 0.2027\), temperatura final = 40 °C  
+   - Saída: `5.41 minutos`
+
+3. **Determinação do coeficiente de resfriamento**
+   - Entrada: \(T_0 = 80\) °C, \(T_{amb} = 60\) °C, \(T_1 = 61\) °C após 5 min  
+   - Saída: `A constante de resfriamento é 0.599146`
+
+## 📌 Finalidade
+Este estudo exploratório tem como objetivo **popularizar conceitos de Matemática Aplicada**, mostrando como equações diferenciais 
+podem ser resolvidas numericamente e aplicadas a fenômenos físicos simples. Pode ser usado como material didático em ciência e tecnologia.
+
+---
+
+👨‍💻 Autor: **Nyckolas Phoenyx**  
+📅 Data: 05/09/2025
